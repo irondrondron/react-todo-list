@@ -1,0 +1,89 @@
+$accent: #FF0063;
+$bgc: #280018;
+
+.App {
+  height: 100vh;
+  color: $accent;
+  // font-size: 24px;
+}
+
+.header {
+  text-align: center;
+  color: #FF0063;
+  border-bottom: 3px solid $accent;
+  margin: 0;
+  padding: 15px;margin-bottom: 20px;
+}
+
+::placeholder {
+  color: darken($accent, 10%);
+}
+button{
+  outline: none;
+  border: none;
+  margin: 10px;
+  background-color: lighten($bgc, 3%);
+  padding: 10px;
+  color: $accent;
+
+}
+
+.form {
+  display: flex;
+  margin: 10px auto;
+  margin-bottom: 40px;
+
+  &-input {
+    outline: none;
+    border: none;
+    background-color: lighten($bgc, 3%);
+    padding: 20px 15px;
+    width: 85vw;
+    color: lighten($accent, 10%);
+    font-size: 24px;
+  }
+
+  &-btn {
+    margin: 0;
+    outline: none;
+    border: none;
+    width: 15vw;
+    background-color: lighten($bgc, 6%);
+    color: $accent;
+    font-size: 20px;
+  }
+}
+
+
+
+
+.todoitem{
+  display: flex;
+  margin: 10px auto;
+  margin-bottom: 40px;
+  min-height: 50px;
+
+  &-text {
+    outline: none;
+    border: none;
+    background-color: lighten($bgc, 3%);
+    padding: 10px 15px;
+    width: 85vw;
+    color: $accent;
+    font-size: 24px;
+  }
+
+  &-btn {
+    margin: 0;
+    outline: none;
+    border: none;
+    width: 15vw;
+    background-color: lighten($bgc, 6%);
+    color: $accent;
+    font-size: 20px;
+  }
+}
+
+@media all and (max-width: 480px) {
+
+ }
